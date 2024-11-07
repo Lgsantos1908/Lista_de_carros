@@ -9,7 +9,6 @@ export const HeaderMenu = styled.div`
     width: 100%;
     height: 100vh;
     margin: 0 auto;
-    background-image: url("src/assets/images/foto.png");
     background-size: cover;
     display: flex;
     align-items: center;
@@ -46,6 +45,13 @@ export const Content = styled.div`
     }
 `;
 
+export const ForMenu = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+`;
+
 export const AboutUs = styled.div`
     width: 100%;
     height: 100vh;
@@ -60,6 +66,7 @@ export const AboutUs = styled.div`
         border-radius: 12.5rem 0;
     }
 `;
+
 
 export const Description = styled.div`
     width: 50%;

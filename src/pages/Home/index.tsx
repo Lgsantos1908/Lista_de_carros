@@ -11,8 +11,12 @@ import Logo from '../../assets/images/Logo_htw.png'
 
 export function Home() {
     const [Carrinhos, setCarrinhos]= useState<carrinhos[]>([]);
+
+   
     useEffect(()=> {
-        fetch("http://localhost:3000/carrinhos", {
+        
+        
+        fetch("https://carros-6e093-default-rtdb.firebaseio.com/carrinhos.json", {
             method: "GET", 
             headers: {
                 "Content-Type" : 'application/json'
@@ -21,8 +25,12 @@ export function Home() {
         .then(
             (resp) => resp.json()
             .then((data) => {
-                setCarrinhos(data)
+                const carrinhosArray = Object.values(data) as carrinhos[];
+                setCarrinhos(carrinhosArray);
+
+                console.log(Carrinhos)
             })
+                
         )
         .catch((err) => console.log(err))
     }, [])

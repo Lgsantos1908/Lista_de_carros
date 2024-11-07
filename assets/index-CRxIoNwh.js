@@ -43,8 +43,6 @@ Error generating stack: `+o.message+`
     
 `,Om=qe.div`
     width: 100%;
-    height: 100vh;
-    margin: 0 auto;
     background-size: cover;
     display: flex;
     align-items: center;

@@ -5,7 +5,6 @@ import {
     AboutUs,
     Description,
 } from './styles'
-import { Link } from 'react-router-dom';
 import logoImg from '../../assets/images/capitão.jpg'
 import usImg from '../../assets/images/Restaurante.jpeg'
 
@@ -34,7 +33,6 @@ export function Home() {
                         Junte-se a nós nessa jornada culinária onde cada refeição é uma celebração do amor pelo oceano e pela arte da culinária.
                     </p>
                     <button>
-                        <Link to="/history">Nossa história...</Link>
                     </button>
                 </Description>
                 <img src={usImg} alt="imagem restaurante" />

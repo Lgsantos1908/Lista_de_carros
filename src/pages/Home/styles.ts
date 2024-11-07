@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-    height: 100%;
+    height: 100vh;
     
 `;
 
@@ -13,19 +13,16 @@ export const HeaderMenu = styled.div`
     display: flex;
     align-items: center;
     justify-content:center;
-    flex-direction: column;
 
     img{
-        width: 17rem;
-        height: 17rem;
-        border-radius: 50%;
-        
+        width: 24rem;
+        height: 20rem;
     }
-    h1{
+
+    h1 {
         font-size: 4.5rem;
-        color: white;
-        -webkit-text-stroke: 0.2rem #3B3B3B;
-        
+        color: #222233;
+        margin-top: 1rem;
     }
 `;
 
@@ -36,13 +33,8 @@ export const Content = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: #B7A99A;
 
-    h1 {
-        font-size: 3rem;
-        color: #222233;
-        margin-top: 1rem;
-    }
+    
 `;
 
 export const ForMenu = styled.div`

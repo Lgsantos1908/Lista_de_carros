@@ -1,12 +1,13 @@
 import {
     Container,
     Content,
-    HeaderMenu,
     ForMenu,
+    HeaderMenu
 } from './styles'
 import { Carros } from '../../components/Carros'
 import { carrinhos } from '../../types/types';
 import { useEffect, useState } from 'react';
+import Logo from '../../assets/images/Logo_htw.png'
 
 export function Home() {
     const [Carrinhos, setCarrinhos]= useState<carrinhos[]>([]);
@@ -28,10 +29,11 @@ export function Home() {
     
     return (
         <Container>
-            <HeaderMenu>
-            </HeaderMenu>
             <Content>
-                <h1>Lista de Carrinhos</h1>
+                <HeaderMenu>
+                    <h1>Lista de Carrinhos</h1>
+                    <img src={Logo}/>
+                </HeaderMenu>
                 <ForMenu>
                         {
                             Carrinhos.map((e,index) =>(

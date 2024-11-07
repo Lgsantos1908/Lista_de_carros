@@ -2,27 +2,27 @@
  
   "carrinhos": [
     {
-      "id": "1",
-      "nomeprato": "Paella de Frutos do Mar",
-      "descricaoprato": "Arroz espanhol cozido com frutos do mar variados, açafrão e pimentões, resultando em uma explosão de sabores.",
-      "foto": "https://images.pexels.com/photos/12419160/pexels-photo-12419160.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "id": "100",
+      "carrinho_nome": "Paella de Frutos do Mar",
+      "colecao_carrinho": "Arroz espanhol cozido com frutos do mar variados, açafrão e pimentões, resultando em uma explosão de sabores.",
+      "foto": "https://photos.google.com/photo/AF1QipPx6Hrc6XUcJSztKusHim2_GqWvLVCaGMQJ8i7o"
     },
     {
-      "id": "2",
-      "nomeprato": "Risoto de Camarão",
-      "descricaoprato": "Arroz carnaroli cozido no ponto certo, envolto em uma mistura de camarões suculentos, lulas macias e mexilhões frescos.",
+      "id": "1",
+      "carrinho_nome": "Risoto de Camarão",
+      "colecao_carrinho": "Arroz carnaroli cozido no ponto certo, envolto em uma mistura de camarões suculentos, lulas macias e mexilhões frescos.",
       "foto": "https://images.pexels.com/photos/15508173/pexels-photo-15508173/free-photo-of-camarao-risotto-risoto-cozinhando.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-      "id": "3",
-      "nomeprato": "Moqueca de Peixe e Camarão",
-      "descricaoprato": "Peixe e camarões cozidos em um delicioso molho de coco, dendê, tomate, pimentão e coentro.",
+      "id": "2",
+      "carrinho_nome": "Moqueca de Peixe e Camarão",
+      "colecao_carrinho": "Peixe e camarões cozidos em um delicioso molho de coco, dendê, tomate, pimentão e coentro.",
       "foto": "https://img.band.uol.com.br/image/2023/06/08/moqueca-de-peixe-com-camarao-1741.jpg"
     },
     {
-      "id": "4",
-      "nomeprato": "Espaguete com Frutos do Mar",
-      "descricaoprato": "Massa al dente com camarões, mexilhões e lulas em um molho de tomate e vinho branco.",
+      "id": "3",
+      "carrinho_nome": "Espaguete com Frutos do Mar",
+      "colecao_carrinho": "Massa al dente com camarões, mexilhões e lulas em um molho de tomate e vinho branco.",
       "foto": "https://images.pexels.com/photos/3009323/pexels-photo-3009323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
   ]

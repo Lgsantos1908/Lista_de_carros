@@ -37,7 +37,7 @@ export function Home() {
                 <ForMenu>
                         {
                             Carrinhos.map((e,index) =>(
-                                <Carros 
+                                < Carros 
                                     key={index}
                                     idcarrinho={e.idcarrinho}
                                     carrinho_nome={e.carrinho_nome}

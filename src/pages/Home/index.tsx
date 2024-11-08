@@ -28,8 +28,7 @@ export function Home() {
             .then((data) => {
                 const carrinhosArray = Object.values(data) as carrinhos[];
                 setCarrinhos(carrinhosArray);
-
-                setCarrinhosFiltrados(Carrinhos);
+                setCarrinhosFiltrados(carrinhosArray);
                 
 
             })
@@ -51,7 +50,6 @@ export function Home() {
             setCarrinhosFiltrados(filtrados);
         }
     }
-
     return (
         <Container>
             <Content>

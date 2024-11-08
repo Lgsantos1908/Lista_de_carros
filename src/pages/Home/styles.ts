@@ -3,14 +3,11 @@ import styled from "styled-components";
 export const Container = styled.div`
     width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 `;
 
 export const HeaderMenu = styled.div`
     width: 100%;
-    background-size: cover;
+     height: 25vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +20,6 @@ export const HeaderMenu = styled.div`
     h1 {
         font-size: 4.5rem;
         color: #222233;
-        margin-top: 1rem;
     }
 
     /* Responsividade para telas menores */
@@ -51,7 +47,32 @@ export const Content = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0;
+
+    input{
+     width: 100%;
+    max-width: 400px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+    &::placeholder {
+        color: #aaa;
+    }
+
+    &:focus {
+        border-color: #4CAF50; /* Verde no foco */
+        box-shadow: 0 0 8px rgba(76, 175, 80, 0.3); /* Efeito de brilho ao focar */
+    }
+
+    &:hover {
+        border-color: #bbb; /* Altera a cor da borda ao passar o mouse */
+    }
+    }
 `;
 
 export const ForMenu = styled.div`

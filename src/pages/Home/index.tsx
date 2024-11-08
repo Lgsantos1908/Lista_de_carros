@@ -12,8 +12,6 @@ import Logo from '../../assets/images/Logo_htw.png'
 export function Home() {
     const [Carrinhos, setCarrinhos]= useState<carrinhos[]>([]);
     const [CarrinhosFiltrados, setCarrinhosFiltrados] = useState<carrinhos[]>([]);
-    const [valor, setvalor] = useState<String>('')
-
 
    
     useEffect(()=> {
@@ -66,7 +64,6 @@ export function Home() {
                     placeholder="Buscar por carrinho/Coleção" 
                     onChange={(e) => {
                         const inputValor = e.target.value;
-                        setvalor(inputValor);
                         filtrarcarrinho(inputValor); 
                     }}
                 />

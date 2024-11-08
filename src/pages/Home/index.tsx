@@ -12,7 +12,6 @@ import Logo from '../../assets/images/Logo_htw.png'
 export function Home() {
     const [Carrinhos, setCarrinhos]= useState<carrinhos[]>([]);
     const [CarrinhosFiltrados, setCarrinhosFiltrados] = useState<carrinhos[]>([]);
-    const [PesquisarCarrinhos, setPesquisarCarrinhos] =useState<string>('');
 
 
    
@@ -30,8 +29,6 @@ export function Home() {
             .then((data) => {
                 const carrinhosArray = Object.values(data) as carrinhos[];
                 setCarrinhos(carrinhosArray);
-
-                console.log(Carrinhos)
             })
                 
         )
@@ -39,7 +36,7 @@ export function Home() {
     }, [])
 
     function filtrarcarrinho(nomeCarrinho: string) {
-        if (nomeCarrinho === '') {
+        if (nomeCarrinho  === '') {
             setCarrinhosFiltrados(Carrinhos); // Exibe todos os carrinhos se o campo de busca estiver vazio
         } else {
             const filtrados = Carrinhos.filter((e) => 
@@ -63,7 +60,6 @@ export function Home() {
                     placeholder="Buscar por carrinho/Coleção" 
                     onChange={(e) => {
                         const valor = e.target.value;
-                        setPesquisarCarrinhos(valor);
                         filtrarcarrinho(valor);
                     }}
                 />

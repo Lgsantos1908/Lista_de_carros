@@ -7,24 +7,27 @@ export const Container = styled.div`
 
 export const HeaderMenu = styled.div`
     width: 100%;
-     height: 25vh;
+    height: 25vh;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    h1 {
+        font-size: 4.5rem;
+        color: var(--title);
+    }
 
     img {
         width: 24rem;
         height: 20rem;
     }
 
-    h1 {
-        font-size: 4.5rem;
-        color: #222233;
-    }
+    
 
     /* Responsividade para telas menores */
     @media (max-width: 768px) {
         display: flex;
+        marging-top: 2rem;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -49,7 +52,7 @@ export const Content = styled.div`
     justify-content: center;
 
     input{
-     width: 100%;
+    width: 100%;
     max-width: 400px;
     padding: 0.75rem 1rem;
     font-size: 1rem;

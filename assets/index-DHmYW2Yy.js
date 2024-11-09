@@ -54,8 +54,8 @@ Error generating stack: `+o.message+`
     }
 
     img {
-        width: 24rem;
-        height: 20rem;
+        width: 20rem;
+        height: 19rem;
     }
 
     
@@ -63,13 +63,13 @@ Error generating stack: `+o.message+`
     /* Responsividade para telas menores */
     @media (max-width: 768px) {
         display: flex;
-        marging-top: 2rem;
+        marging-top: 5rem;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         img {
-            width: 18rem;
-            height: 15rem;
+            width: 10rem;
+            height: 10rem;
         }
 
         h1 {
@@ -150,10 +150,10 @@ Error generating stack: `+o.message+`
     background-position: center;
     background-repeat: no-repeat;
     
-`;function Um({carrinho_nome:e,colecao_carrinho:t,foto:n}){return J.jsx(Mm,{children:J.jsxs(Fm,{children:[J.jsxs("h3",{children:["Nome: ",e]}),J.jsxs("h3",{children:["Coleção: ",t]}),J.jsx(Am,{style:{backgroundImage:`url(${n})`}})]})})}const Bm="/Lista_de_carros/assets/Logo_htw-Do4kOJFm.png";function Vm(){const[e,t]=St.useState([]),[n,r]=St.useState([]);St.useEffect(()=>{fetch("https://carros-6e093-default-rtdb.firebaseio.com/carrinhos.json",{method:"GET",headers:{"Content-Type":"application/json"}}).then(o=>o.json().then(i=>{const u=Object.values(i);t(u),r(u)})).catch(o=>console.log(o))},[]);function l(o){if(!o.trim())r(e);else{const i=e.filter(u=>u.carrinho_nome.toLowerCase().includes(o.toLowerCase())||u.colecao_carrinho.toLowerCase().includes(o.toLowerCase()));r(i)}}return J.jsx(Im,{children:J.jsxs(jm,{children:[J.jsxs(Om,{children:[J.jsx("h1",{children:"Lista de Carrinhos"}),J.jsx("img",{src:Bm})]}),J.jsx("input",{type:"text",placeholder:"Buscar por carrinho/Coleção",onChange:o=>{const i=o.target.value;l(i)}}),J.jsx(Dm,{children:n.map((o,i)=>J.jsx(Um,{idcarrinho:o.idcarrinho,carrinho_nome:o.carrinho_nome,colecao_carrinho:o.colecao_carrinho,foto:o.foto},i))})]})})}const Hm=$m`
+`;function Um({carrinho_nome:e,colecao_carrinho:t,foto:n}){return J.jsx(Mm,{children:J.jsxs(Fm,{children:[J.jsxs("h3",{children:["Nome: ",e]}),J.jsxs("h3",{children:["Coleção: ",t]}),J.jsx(Am,{style:{backgroundImage:`url(${n})`}})]})})}const Bm="/Lista_de_carros/assets/Logo_htw-Do4kOJFm.png";function Vm(){const[e,t]=St.useState([]),[n,r]=St.useState([]);St.useEffect(()=>{fetch("https://carros-6e093-default-rtdb.firebaseio.com/carrinhos.json",{method:"GET",headers:{"Content-Type":"application/json"}}).then(o=>o.json().then(i=>{const u=Object.values(i);t(u),r(u)})).catch(o=>console.log(o))},[]);function l(o){if(!o.trim())r(e);else{const i=e.filter(u=>u.carrinho_nome.toLowerCase().includes(o.toLowerCase())||u.colecao_carrinho.toLowerCase().includes(o.toLowerCase()));r(i)}}return J.jsx(Im,{children:J.jsxs(jm,{children:[J.jsxs(Om,{children:[J.jsx("h1",{children:"Lista de Carrinhos"}),J.jsx("img",{src:Bm})]}),J.jsx("input",{type:"text",placeholder:"Buscar por Carrinho/Coleção",onChange:o=>{const i=o.target.value;l(i)}}),J.jsx(Dm,{children:n.map((o,i)=>J.jsx(Um,{idcarrinho:o.idcarrinho,carrinho_nome:o.carrinho_nome,colecao_carrinho:o.colecao_carrinho,foto:o.foto},i))})]})})}const Hm=$m`
     :root {
-        --background: #4c907e;
-        --title:  #223032;
+        --background: #454646;
+        --title:  #d5d6d6;
         
     }
     *{

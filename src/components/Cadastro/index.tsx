@@ -28,8 +28,6 @@ export function Cadastro() {
         .then((data) => {
             console.log(data);
             alert("Carrinho cadastrado com sucesso!");
-            // setCarrinhos([]);
-            // setnovoCarrinho('');
             setcolecaoCarrinho('');
             setnomeCarrinho('');
         })

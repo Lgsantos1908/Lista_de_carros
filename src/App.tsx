@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom"
-import  {Home}  from "./pages/Home"
-import { Cadastro} from "./pages/Cadastro"
-import { GlobalStyle } from "./styles/global"
+import  {Home}  from "./pages/Home";
+import { Login } from "./components/Login";
+import { Cadastro} from "./components/Cadastro";
+import { GlobalStyle } from "./styles/global";
 
 
 function App() {
@@ -9,11 +10,12 @@ function App() {
   return (
     <>
       <GlobalStyle/>
-      <Router>
+      <Router basename="/Lista_de_carros">
         <Routes>
-            <Route path="Lista_de_carros/" element={<Navigate to="/home" />} />
+            <Route path="/" element={<Navigate to="/home" />} />
             <Route path="/home" element={<Home />} />
             <Route path="/cadastro" element={<Cadastro/>} />
+            <Route path="/login" element={<Login/>}/>
         </Routes>
       </Router>
     </>

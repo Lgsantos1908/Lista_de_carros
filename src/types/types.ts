@@ -4,3 +4,9 @@ export type carrinhos = {
     colecao_carrinho: string;
     foto: string;
 }
+
+
+export type user = {
+    nome: string;
+    senha: string;
+}

@@ -66,7 +66,7 @@ export function Home() {
                         filtrarcarrinho(inputValor); 
                     }}
                 />
-                <Link to='/cadastro'>Cadastro carrinho </Link>
+                <Link to='/login'>Cadastro carrinho </Link>
 
                  <ForMenu>
                     {

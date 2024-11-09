@@ -2,7 +2,8 @@ import {
     Container,
     Content,
     ForMenu,
-    HeaderMenu
+    HeaderMenu,
+    Dados
 } from './styles'
 import { Carros } from '../../components/Carros'
 import { carrinhos } from '../../types/types';
@@ -53,9 +54,14 @@ export function Home() {
     return (
         <Container>
             <Content>
+                
                 <HeaderMenu>
                     <h1>Lista de Carrinhos</h1>
                     <img src={Logo}/>
+                    <Dados>
+                        <h1>Total carrinhos</h1>
+                        <h2>{CarrinhosFiltrados.length}</h2>
+                    </Dados>
                 </HeaderMenu>
                 <input 
                     type="text" 
@@ -65,6 +71,7 @@ export function Home() {
                         filtrarcarrinho(inputValor); 
                     }}
                 />
+
                  <ForMenu>
                     {
                         CarrinhosFiltrados.map((e, index) => (
@@ -78,7 +85,7 @@ export function Home() {
                         ))
                     }
                 </ForMenu>
-
+                
             </Content>
         </Container>
     )

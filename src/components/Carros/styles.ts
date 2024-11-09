@@ -19,11 +19,11 @@ export const Card = styled.div`
     
     h3{
         font-size: 1rem;
-        color: white;
+        color: var(--info);
         margin-bottom: 0.5rem;        
     }
 `;
-250
+
 export const CardFront = styled.div`
     height: 270px;
     width: 250px;

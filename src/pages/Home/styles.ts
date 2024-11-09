@@ -20,9 +20,7 @@ export const HeaderMenu = styled.div`
     img {
         width: 20rem;
         height: 19rem;
-    }
-
-    
+    }  
 
     /* Responsividade para telas menores */
     @media (max-width: 768px) {
@@ -41,6 +39,24 @@ export const HeaderMenu = styled.div`
         }
     }
 `;
+
+export const Dados = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+        font-size: 1.8rem;
+        color: var(--info);
+    }
+
+    h2{
+        font-size: 1.5rem;
+        color: var(--info);
+    }
+
+`
 
 
 export const Content = styled.div`
@@ -74,7 +90,7 @@ export const Content = styled.div`
 
     &:hover {
         border-color: #bbb; /* Altera a cor da borda ao passar o mouse */
-    }
+    
     }
 `;
 

@@ -18,8 +18,8 @@ export const HeaderMenu = styled.div`
     }
 
     img {
-        width: 24rem;
-        height: 20rem;
+        width: 20rem;
+        height: 19rem;
     }
 
     
@@ -27,13 +27,13 @@ export const HeaderMenu = styled.div`
     /* Responsividade para telas menores */
     @media (max-width: 768px) {
         display: flex;
-        marging-top: 2rem;
+        marging-top: 5rem;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         img {
-            width: 18rem;
-            height: 15rem;
+            width: 10rem;
+            height: 10rem;
         }
 
         h1 {

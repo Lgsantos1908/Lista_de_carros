@@ -59,7 +59,7 @@ export function Home() {
                 </HeaderMenu>
                 <input 
                     type="text" 
-                    placeholder="Buscar por carrinho/Coleção" 
+                    placeholder="Buscar por Carrinho/Coleção" 
                     onChange={(e) => {
                         const inputValor = e.target.value;
                         filtrarcarrinho(inputValor); 

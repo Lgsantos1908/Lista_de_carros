@@ -23,6 +23,7 @@ export const Card = styled.div`
         margin-bottom: 0.5rem;        
     }
 `;
+250
 export const CardFront = styled.div`
     height: 270px;
     width: 250px;

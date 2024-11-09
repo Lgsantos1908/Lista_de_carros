@@ -5,6 +5,17 @@ export const GlobalStyle = createGlobalStyle`
         --background: #454646;
         --title:  #d5d6d6;
         --info: #f2ecff;
+
+        --bg_page: #454646; /* Cor de fundo da página */
+        --bg_form: #ffffff; /* Cor de fundo do formulário */
+        --title: #d5d6d6; /* Cor do título */
+        --input_bg: #f0f0f0; /* Cor de fundo dos inputs */
+        --input_text: #333; /* Cor do texto nos inputs */
+        --input_focus_bg: #e6e6e6; /* Cor de fundo dos inputs ao focar */
+        --highlight: #007BFF; /* Cor do destaque (bordas ao focar) */
+        --bg_button: #28a745; /* Cor de fundo do botão */
+        --bg_button_click: #218838; /* Cor do botão ao passar o mouse */
+        --bg_button_active: #1e7e34; /* Cor do botão ao clicar */
         
     }
     *{

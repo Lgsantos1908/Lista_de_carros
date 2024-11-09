@@ -1,79 +1,77 @@
-import styled from "styled-components"
+import styled from 'styled-components';
+
 
 export const Container = styled.div`
-    width: 100%;
-    padding: 5rem;;
-
-   
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda a altura da tela */
 `;
 
 export const FormUser = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    div{    
+      background-color: #fff;
+        padding: 2rem 3rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar destaque */
         width: 100%;
-        h1 {
-            
-            font-size: 3rem;
-            color: var(--title);
-            padding: 0.8rem;
-            display: flex;
-            justify-content:start;
-    }
-    }
+        max-width: 400px; /* Limita a largura do formulário */
     
     form {
-        width: 700px;
-        height: 250px;
-        padding: 0.9rem;
-        border-radius: 0.9rem;
-        background: var(--bg_form);
-       
         display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: column;
-
-        input{
-            width: auto;
-            border: 1px solid #ccc;
-            padding: 0.30rem;
-            border-radius: 0.62rem;
-        }
-
-        input[type="button"] {
-            width: 8rem;
-            height: 2rem;
-            color: black;
-            font-size: 0.9rem;
-            border: none;
-            border-radius: 0.75rem;
-            background: var(--bg_button);        
-            cursor: pointer;
-            transition: background-color 0.5s ease-in-out;
-
-            &:hover {
-                background-color: var(--bg_button_click);
-            }   
-        }
-
+        gap: 1.5rem;
     }
-  
-`;
 
-export const SaveButton = styled.div`
+    h3 {
+        text-align: center;
+        font-size: 3rem;
+        color: #333;
+        margin-bottom: 1rem;
+    }
 
-    width: 100%;        
-    display: flex;
-    margin: 0;
-    
     h2 {
-        font-size: 1rem;
-        margin: 0.25rem 0.62rem;
+        text-align: center;
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 1rem;
     }
 
+    input {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid #ccc;
+        border-radius: 0.62rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        background-color: var(--input_bg);
+        color: var(--input_text);
+        transition: all 0.3s ease-in-out;
+    }
+
+    input:focus {
+        border-color: var(--highlight);
+        outline: none;
+        background-color: var(--input_focus_bg); /* Cor de fundo ao focar */
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 1rem;
+        color: white;
+        font-size: 1.1rem;
+        border: none;
+        border-radius: 0.75rem;
+        background: var(--bg_button);
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+
+        &:hover {
+            background-color: var(--bg_button_click);
+        }
+    }
+
+    input[type="submit"]:active {
+        background-color: var(--bg_button_active); /* Cor de fundo ao clicar */
+    }
+        
 `;

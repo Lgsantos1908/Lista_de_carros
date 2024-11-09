@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
     width: 100%;
@@ -43,8 +44,17 @@ export const HeaderMenu = styled.div`
 export const Dados = styled.div`
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+`
+
+export const Total = styled.div`
+    display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
+
 
     h1 {
         font-size: 1.8rem;
@@ -56,7 +66,40 @@ export const Dados = styled.div`
         color: var(--info);
     }
 
+    
+
 `
+
+export const StyledLink = styled(Link)`
+  display: inline-block;
+  padding: 0.75rem 1.5rem;  /* 12px 24px */
+  font-size: 1rem;          /* 16px */
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  marging-top: 3rem;
+  background-color: #4CAF50; /* Cor verde */
+  color: white;
+  border-radius: 0.5rem;     /* 8px */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);  /* 4px 8px */
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #45a049; /* Cor verde mais escura */
+    transform: translateY(-0.125rem); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);  /* 8px 16px */
+  }
+
+  &:active {
+    background-color: #3e8e41; /* Cor ainda mais escura ao clicar */
+    transform: translateY(0); /* Retorna ao estado original */
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.5); /* Foco no botão */
+  }
+`;  
 
 
 export const Content = styled.div`

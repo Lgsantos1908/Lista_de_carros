@@ -39,9 +39,10 @@ export function Cadastro() {
 
     return(
         <Container>
-            <h1>Cadastro</h1>
+            
         <FormUser>
             <form>
+                <h1>Cadastro</h1>
                 <h2>Nome</h2>
                 <input type="text" onChange={(e) => setnomeCarrinho(e.target.value)} />
                 <h2>Coleção</h2>

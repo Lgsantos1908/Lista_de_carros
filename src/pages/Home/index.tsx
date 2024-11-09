@@ -3,14 +3,14 @@ import {
     Content,
     ForMenu,
     HeaderMenu,
-    Dados
+    Dados,
+    Total,
+    StyledLink
 } from './styles'
 import { Carros } from '../../components/Carros'
 import { carrinhos } from '../../types/types';
 import {useEffect, useState } from 'react';
 import Logo from '../../assets/images/Logo_htw.png'
-import { Link } from 'react-router-dom';
-
 export function Home() {
     const [Carrinhos, setCarrinhos]= useState<carrinhos[]>([]);
     const [CarrinhosFiltrados, setCarrinhosFiltrados] = useState<carrinhos[]>([]);
@@ -54,9 +54,13 @@ export function Home() {
                     <h1>Lista de Carrinhos</h1>
                     <img src={Logo}/>
                     <Dados>
-                        <h1>Total carrinhos</h1>
-                        <h2>{CarrinhosFiltrados.length}</h2>
+                        <Total>
+                            <h1>Total carrinhos</h1>
+                            <h2>{CarrinhosFiltrados.length}</h2>
+                        </Total>
+                        <StyledLink to='/login'>Cadastro carrinho</StyledLink>
                     </Dados>
+                    
                 </HeaderMenu>
                 <input 
                     type="text" 
@@ -66,7 +70,7 @@ export function Home() {
                         filtrarcarrinho(inputValor); 
                     }}
                 />
-                <Link to='/login'>Cadastro carrinho </Link>
+                
 
                  <ForMenu>
                     {

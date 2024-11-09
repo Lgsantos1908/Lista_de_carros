@@ -9,15 +9,14 @@ import { Carros } from '../../components/Carros'
 import { carrinhos } from '../../types/types';
 import {useEffect, useState } from 'react';
 import Logo from '../../assets/images/Logo_htw.png'
+import { Link } from 'react-router-dom';
 
 export function Home() {
     const [Carrinhos, setCarrinhos]= useState<carrinhos[]>([]);
     const [CarrinhosFiltrados, setCarrinhosFiltrados] = useState<carrinhos[]>([]);
 
    
-    useEffect(()=> {
-        
-        
+    useEffect(()=> {                
         fetch("https://carros-6e093-default-rtdb.firebaseio.com/carrinhos.json", {
             method: "GET", 
             headers: {
@@ -30,13 +29,9 @@ export function Home() {
                 const carrinhosArray = Object.values(data) as carrinhos[];
                 setCarrinhos(carrinhosArray);
                 setCarrinhosFiltrados(carrinhosArray);
-                
-
-            })
-                
+            })                
         )
-        .catch((err) => console.log(err))
-        
+        .catch((err) => console.log(err))        
     }, []) 
 
     function filtrarcarrinho(nomeCarrinho: string) {
@@ -71,6 +66,7 @@ export function Home() {
                         filtrarcarrinho(inputValor); 
                     }}
                 />
+                <Link to='/cadastro'>Cadastro carrinho </Link>
 
                  <ForMenu>
                     {

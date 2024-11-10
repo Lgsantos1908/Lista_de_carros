@@ -40,10 +40,10 @@ export function Home() {
     function filtrarcarrinho(nomeCarrinho: string) {
         
         if (!nomeCarrinho.trim()) {
-            setCarrinhosFiltrados(Carrinhos); // Exibe todos os carrinhos se o campo de busca estiver vazio
+            setCarrinhosFiltrados(Carrinhos); 
         } else {
             const filtrados = Carrinhos.filter((e) => 
-                e.carrinho_nome.toLowerCase().includes(nomeCarrinho.toLowerCase()) || // Filtra por nome, ignorando maiúsculas/minúsculas
+                e.carrinho_nome.toLowerCase().includes(nomeCarrinho.toLowerCase()) || 
                 e.colecao_carrinho.toLowerCase().includes(nomeCarrinho.toLowerCase())
             );
             setCarrinhosFiltrados(filtrados);
@@ -53,10 +53,8 @@ export function Home() {
     function confirInfo(){
 
         if (confirm("Você sabe a senha?")) {
-            // Código a ser executado se o usuário confirmar
             navigate('/login')
         } else {
-            // Código a ser executado se o usuário cancelar
             alert("Então, saiba que isso não é para você!")
 
         }
@@ -103,7 +101,6 @@ export function Home() {
                         ))
                     }
                 </ForMenu>
-                
             </Content>
         </Container>
     )

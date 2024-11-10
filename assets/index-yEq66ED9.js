@@ -417,4 +417,4 @@ Error generating stack: `+l.message+`
         
     }
 
-`;function Bv(){return z.jsxs(z.Fragment,{children:[z.jsx(Av,{}),z.jsx(m0,{basename:"/Lista_de_carros",children:z.jsxs(s0,{children:[z.jsx(sr,{path:"/",element:z.jsx(i0,{to:"/home"})}),z.jsx(sr,{path:"/home",element:z.jsx(Ov,{})}),z.jsx(sr,{path:"/cadastro",element:z.jsx(Uv,{})}),z.jsx(sr,{path:"/login",element:z.jsx(Fv,{})})]})})]})}di.createRoot(document.getElementById("root")).render(z.jsx(He.StrictMode,{children:z.jsx(Bv,{})}));
+`;function Bv(){return z.jsxs(z.Fragment,{children:[z.jsx(Av,{}),z.jsx(m0,{children:z.jsxs(s0,{children:[z.jsx(sr,{path:"/",element:z.jsx(i0,{to:"/home"})}),z.jsx(sr,{path:"/home",element:z.jsx(Ov,{})}),z.jsx(sr,{path:"/cadastro",element:z.jsx(Uv,{})}),z.jsx(sr,{path:"/login",element:z.jsx(Fv,{})})]})})]})}di.createRoot(document.getElementById("root")).render(z.jsx(He.StrictMode,{children:z.jsx(Bv,{})}));

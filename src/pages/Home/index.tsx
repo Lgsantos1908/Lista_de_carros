@@ -11,9 +11,12 @@ import { Carros } from '../../components/Carros'
 import { carrinhos } from '../../types/types';
 import {useEffect, useState } from 'react';
 import Logo from '../../assets/images/Logo_htw.png'
+import { useNavigate } from 'react-router-dom';
+
 export function Home() {
     const [Carrinhos, setCarrinhos]= useState<carrinhos[]>([]);
     const [CarrinhosFiltrados, setCarrinhosFiltrados] = useState<carrinhos[]>([]);
+    const navigate = useNavigate();
 
    
     useEffect(()=> {                
@@ -46,6 +49,20 @@ export function Home() {
             setCarrinhosFiltrados(filtrados);
         }
     }
+
+    function confirInfo(){
+
+        if (confirm("Você sabe a senha?")) {
+            // Código a ser executado se o usuário confirmar
+            console.log("Usuário confirmou a ação.");
+            navigate('/cadastro')
+        } else {
+            // Código a ser executado se o usuário cancelar
+            alert("Então saia que isso não é pra você!")
+
+        }
+    }
+
     return (
         <Container>
             <Content>
@@ -58,7 +75,9 @@ export function Home() {
                             <h1>Total carrinhos</h1>
                             <h2>{CarrinhosFiltrados.length}</h2>
                         </Total>
-                        <StyledLink to='/login'>Cadastro carrinho</StyledLink>
+                        <StyledLink   
+                            onClick={confirInfo} > Cadastro carrinho
+                        </StyledLink>
                     </Dados>
                     
                 </HeaderMenu>

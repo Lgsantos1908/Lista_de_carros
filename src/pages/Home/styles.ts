@@ -73,7 +73,7 @@ export const Total = styled.div`
 
 `
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled.div`
   display: inline-block;
   padding: 0.75rem 1.5rem;  /* 12px 24px */
   font-size: 1rem;          /* 16px */

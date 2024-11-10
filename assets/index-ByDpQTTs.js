@@ -232,7 +232,7 @@ Error generating stack: `+l.message+`
     background-position: center;
     background-repeat: no-repeat;
     
-`;function Tv({carrinho_nome:e,colecao_carrinho:t,foto:n}){return z.jsx(Rv,{children:z.jsxs(zv,{children:[z.jsxs("h3",{children:["Nome: ",e]}),z.jsxs("h3",{children:["Coleção: ",t]}),z.jsx(Lv,{style:{backgroundImage:`url(${n})`}})]})})}const jv="/Lista_de_carros/assets/Logo_htw-Do4kOJFm.png";function Ov(){const[e,t]=_.useState([]),[n,r]=_.useState([]),o=Pl();_.useEffect(()=>{fetch("https://carros-6e093-default-rtdb.firebaseio.com/carrinhos.json",{method:"GET",headers:{"Content-Type":"application/json"}}).then(u=>u.json().then(s=>{const a=Object.values(s);t(a),r(a)})).catch(u=>console.log(u))},[]);function l(u){if(!u.trim())r(e);else{const s=e.filter(a=>a.carrinho_nome.toLowerCase().includes(u.toLowerCase())||a.colecao_carrinho.toLowerCase().includes(u.toLowerCase()));r(s)}}function i(){confirm("Você sabe a senha?")?(console.log("Usuário confirmou a ação."),o("/cadastro")):alert("Então saia que isso não é pra você!")}return z.jsx(kv,{children:z.jsxs(Pv,{children:[z.jsxs(xv,{children:[z.jsx("h1",{children:"Lista de Carrinhos"}),z.jsx("img",{src:jv}),z.jsxs(Cv,{children:[z.jsxs(Ev,{children:[z.jsx("h1",{children:"Total carrinhos"}),z.jsx("h2",{children:n.length})]}),z.jsx(_v,{onClick:i,children:" Cadastro carrinho"})]})]}),z.jsx("input",{type:"text",placeholder:"Buscar por Carrinho/Coleção",onChange:u=>{const s=u.target.value;l(s)}}),z.jsx(Nv,{children:n.map((u,s)=>z.jsx(Tv,{idcarrinho:u.idcarrinho,carrinho_nome:u.carrinho_nome,colecao_carrinho:u.colecao_carrinho,foto:u.foto},s))})]})})}const $v=ge.div`
+`;function Tv({carrinho_nome:e,colecao_carrinho:t,foto:n}){return z.jsx(Rv,{children:z.jsxs(zv,{children:[z.jsxs("h3",{children:["Nome: ",e]}),z.jsxs("h3",{children:["Coleção: ",t]}),z.jsx(Lv,{style:{backgroundImage:`url(${n})`}})]})})}const jv="/Lista_de_carros/assets/Logo_htw-Do4kOJFm.png";function Ov(){const[e,t]=_.useState([]),[n,r]=_.useState([]),o=Pl();_.useEffect(()=>{fetch("https://carros-6e093-default-rtdb.firebaseio.com/carrinhos.json",{method:"GET",headers:{"Content-Type":"application/json"}}).then(u=>u.json().then(s=>{const a=Object.values(s);t(a),r(a)})).catch(u=>console.log(u))},[]);function l(u){if(!u.trim())r(e);else{const s=e.filter(a=>a.carrinho_nome.toLowerCase().includes(u.toLowerCase())||a.colecao_carrinho.toLowerCase().includes(u.toLowerCase()));r(s)}}function i(){confirm("Você sabe a senha?")?o("/login"):alert("Então, saiba que isso não é para você!")}return z.jsx(kv,{children:z.jsxs(Pv,{children:[z.jsxs(xv,{children:[z.jsx("h1",{children:"Lista de Carrinhos"}),z.jsx("img",{src:jv}),z.jsxs(Cv,{children:[z.jsxs(Ev,{children:[z.jsx("h1",{children:"Total carrinhos"}),z.jsx("h2",{children:n.length})]}),z.jsx(_v,{onClick:i,children:" Cadastro carrinho"})]})]}),z.jsx("input",{type:"text",placeholder:"Buscar por Carrinho/Coleção",onChange:u=>{const s=u.target.value;l(s)}}),z.jsx(Nv,{children:n.map((u,s)=>z.jsx(Tv,{idcarrinho:u.idcarrinho,carrinho_nome:u.carrinho_nome,colecao_carrinho:u.colecao_carrinho,foto:u.foto},s))})]})})}const $v=ge.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -393,9 +393,7 @@ Error generating stack: `+l.message+`
         --title:  #d5d6d6;
         --info: #f2ecff;
 
-        --bg_page: #454646; /* Cor de fundo da página */
         --bg_form: #ffffff; /* Cor de fundo do formulário */
-        --title: #d5d6d6; /* Cor do título */
         --input_bg: #f0f0f0; /* Cor de fundo dos inputs */
         --input_text: #333; /* Cor do texto nos inputs */
         --input_focus_bg: #e6e6e6; /* Cor de fundo dos inputs ao focar */

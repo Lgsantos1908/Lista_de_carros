@@ -54,8 +54,7 @@ export function Home() {
 
         if (confirm("Você sabe a senha?")) {
             // Código a ser executado se o usuário confirmar
-            console.log("Usuário confirmou a ação.");
-            navigate('/cadastro')
+            navigate('/login')
         } else {
             // Código a ser executado se o usuário cancelar
             alert("Então, saiba que isso não é para você!")

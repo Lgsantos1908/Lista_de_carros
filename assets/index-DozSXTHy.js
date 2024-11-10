@@ -87,18 +87,21 @@ Error generating stack: `+l.message+`
 
     /* Responsividade para telas menores */
     @media (max-width: 768px) {
+        height: 50vh;
         display: flex;
-        marging-top: 5rem;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         img {
             width: 10rem;
             height: 10rem;
+
         }
 
         h1 {
             font-size: 2.5rem;
+            
+            marging-top: 5rem;
         }
     }
 `,Cv=ge.div`
@@ -234,6 +237,9 @@ Error generating stack: `+l.message+`
   justify-content: center;
   align-items: center;
   height: 100vh; /* Ocupa toda a altura da tela */
+
+
+
 `,Iv=ge.div`
       background-color: #fff;
         padding: 2rem 3rem;
@@ -298,6 +304,11 @@ Error generating stack: `+l.message+`
 
     input[type="submit"]:active {
         background-color: var(--bg_button_active); /* Cor de fundo ao clicar */
+    }
+
+    /* Responsividade para telas menores */
+    @media (max-width: 768px) {
+        width: 90%;
     }
         
 `;function Fv(){const[e,t]=_.useState([]),[n,r]=_.useState(""),[o,l]=_.useState(""),i=hs();_.useEffect(()=>{fetch("https://carros-6e093-default-rtdb.firebaseio.com/usuario.json",{method:"GET",headers:{"Content-Type":"application/json"}}).then(s=>s.json().then(a=>{console.log("Dados brutos do Firebase:",a);const h=[a];t(h),console.log("Estrutura convertida dos usuários:",h)})).catch(s=>console.log(s))},[]);function u(){const s=e.find(a=>a.nome===n&&a.senha===o);s?(alert("Login bem-sucedido!"),i("/cadastro")):alert("Usuário ou senha incorretos!"),console.log("Usuário encontrado:",s)}return z.jsx($v,{children:z.jsx(Iv,{children:z.jsxs("form",{children:[z.jsx("h1",{children:"Login"}),z.jsx("h2",{children:"Usuario"}),z.jsx("input",{type:"text",onChange:s=>r(s.target.value),placeholder:"Digite seu usuário"}),z.jsx("h2",{children:"Senha"}),z.jsx("input",{type:"password",onChange:s=>l(s.target.value),placeholder:"Digite sua senha"}),z.jsx("input",{type:"submit",value:"Fazer login",onClick:u})]})})})}const Dv=ge.div`
@@ -370,6 +381,11 @@ Error generating stack: `+l.message+`
 
     input[type="submit"]:active {
         background-color: var(--bg_button_active); /* Cor de fundo ao clicar */
+    }
+
+    /* Responsividade para telas menores */
+    @media (max-width: 768px) {
+        width: 90%;
     }
 `;function Uv(){const[e,t]=_.useState(""),[n,r]=_.useState(""),o=()=>{const l={carrinho_nome:e.toUpperCase(),colecao_carrinho:n.toUpperCase(),foto:""};fetch("https://carros-6e093-default-rtdb.firebaseio.com/carrinhos.json",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(l)}).then(i=>i.json()).then(i=>{console.log(i),alert("Carrinho cadastrado com sucesso!"),r(""),t("")}).catch(i=>console.log(i))};return z.jsx(Dv,{children:z.jsx(Mv,{children:z.jsxs("form",{children:[z.jsx("h1",{children:"Cadastro"}),z.jsx("h2",{children:"Nome"}),z.jsx("input",{type:"text",onChange:l=>t(l.target.value)}),z.jsx("h2",{children:"Coleção"}),z.jsx("input",{type:"text",onChange:l=>r(l.target.value)}),z.jsx(wd,{to:"/home",children:z.jsx("input",{type:"submit",value:"Criar carrinho",onClick:o})})]})})})}const Av=Sv`
     :root {

@@ -58,7 +58,7 @@ export function Home() {
             navigate('/cadastro')
         } else {
             // Código a ser executado se o usuário cancelar
-            alert("Então saia que isso não é pra você!")
+            alert("Então, saiba que isso não é para você!")
 
         }
     }

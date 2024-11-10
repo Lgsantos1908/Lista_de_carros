@@ -6,6 +6,9 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh; /* Ocupa toda a altura da tela */
+
+
+
 `;
 
 export const FormUser = styled.div`
@@ -72,6 +75,11 @@ export const FormUser = styled.div`
 
     input[type="submit"]:active {
         background-color: var(--bg_button_active); /* Cor de fundo ao clicar */
+    }
+
+    /* Responsividade para telas menores */
+    @media (max-width: 768px) {
+        width: 90%;
     }
         
 `;

@@ -139,5 +139,10 @@ export const FormUser = styled.div`
     input[type="submit"]:active {
         background-color: var(--bg_button_active); /* Cor de fundo ao clicar */
     }
+
+    /* Responsividade para telas menores */
+    @media (max-width: 768px) {
+        width: 90%;
+    }
 `;
 

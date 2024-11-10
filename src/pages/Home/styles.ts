@@ -25,18 +25,21 @@ export const HeaderMenu = styled.div`
 
     /* Responsividade para telas menores */
     @media (max-width: 768px) {
+        height: 50vh;
         display: flex;
-        marging-top: 5rem;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         img {
             width: 10rem;
             height: 10rem;
+
         }
 
         h1 {
             font-size: 2.5rem;
+            
+            marging-top: 5rem;
         }
     }
 `;

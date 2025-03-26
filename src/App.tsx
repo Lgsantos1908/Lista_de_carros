@@ -28,7 +28,6 @@ return (
     <GlobalStyle />
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/login" element={<Login />} />

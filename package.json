@@ -4,9 +4,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
+ "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
     "predeploy": "npm run build",
-    "build": "vite build && cpx dist/index.html dist/404.html",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {

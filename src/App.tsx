@@ -5,7 +5,7 @@ import { Cadastro} from "./components/Cadastro";
 import { GlobalStyle } from "./styles/global";
 
 
- function App() {
+function App() {
 
   return (
     <>
